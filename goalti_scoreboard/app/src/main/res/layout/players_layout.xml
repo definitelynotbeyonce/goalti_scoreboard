@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:paddingBottom="10dip"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/player_list" />
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight=".5">
+
+            <Button
+                android:text="Add Player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_list_add_player" />
+
+            <Button
+                android:text="clear player list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_list_clear" />
+
+            <Button
+                android:text="save players to file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_list_save" />
+
+            <Button
+                android:text="Load players from file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_list_load_players" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

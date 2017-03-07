@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/player_list_player_template">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_list_playing"
+        android:text="playing?" />
+
+    <ImageView
+        android:layout_height="50dip"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/player_list_profile_img"
+        android:layout_weight="0.15"
+        android:minWidth="50dip"
+        android:maxWidth="50dip"
+        android:layout_width="50dip"
+        android:adjustViewBounds="false"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/player_list_info">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_list_name" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_list_email" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_list_actions">
+
+        <Button
+            android:text="edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_list_edit" />
+
+        <Button
+            android:text="remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_list_remove" />
+    </LinearLayout>
+
+</LinearLayout>
